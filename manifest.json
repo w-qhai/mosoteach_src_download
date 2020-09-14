@@ -1,0 +1,16 @@
+{
+  "name": "云班课资源下载",
+  "version": "1.0",
+  "description": "云班课资源下载",
+  "manifest_version": 2,
+  "icons": { 
+    "16": "./images/document.png",
+    "48": "./images/document.png",
+   "128": "./images/document.png" },
+  "content_scripts": [
+      {
+          "matches": ["https://www.mosoteach.cn/web/index.php?c=res*"],
+          "js": ["content.js"]
+      }
+  ]
+}
